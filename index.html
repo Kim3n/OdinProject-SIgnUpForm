@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Sign up</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -20,42 +20,51 @@
         </style>
     </head>
     <body>
+
         <div class="content">
-            
         <div class="img"><div class ="title">RETRO GAMES</div></div>
-        <div class="form-container">
-            <span class="dot"></span>
-            <div class="form">
-                <div class="nes-field">
-                <label for="first_name_field">FIRST NAME</label>
-                <input type="text" id="first_name_field" class="nes-input">
-            </div>
-            <div class="nes-field">
-                <label for="frist_name_field">LAST NAME</label>
-                <input type="text" id="last_name_field" class="nes-input">
-            </div>
-            <div class="nes-field">
-                <label for="email_field">EMAIL</label>
-                <input type="text" id="email_field" class="nes-input">
-            </div>
-            <div class="nes-field">
-                <label for="phone_number_field">PHONE NUMBER</label>
-                <input type="text" id="phone_number_field" class="nes-input">
-            </div>
-            <div class="nes-field">
-                <label for="password_field">PASSWORD</label>
-                <input type="text" id="password_field" class="nes-input">
-            </div>
-            <div class="nes-field">
-                <label for="confirm_password_field">CONFIRM PASSWORD</label>
-                <input type="text" id="confirm_password_field" class="nes-input">
-            </div>
+        <div class="main">
+            <div class="information-text">This is just a test website to make a sign up page.</div>
+            <div class="form-container"> 
+                <div class="led-container"> 
+                    <span class="dot" id="dot"></span>
 
-          <button type="button" class="nes-btn is-success">Primary</button>
-          <span>Already have an account?</span> <span class="nes-text is-success"><a>Log in</a></span>
+                </div>  
+                <form class="form" id="signupForm" >
+                    <div class="nes-field">
+                        <label for="first_name_field">FIRST NAME</label>
+                        <input type="text" id="first_name_field" class="nes-input" required>
+                    </div>
+                    <div class="nes-field">
+                        <label for="last_name_field">LAST NAME</label>
+                        <input type="text" id="last_name_field" class="nes-input" required>
+                    </div>
+                    <div class="nes-field">
+                        <label for="email_field">EMAIL</label>
+                        <input type="email" id="email_field" class="nes-input" required >
+                    </div>             
+                    <div class="nes-field">
+                        <label for="phone_number_field">PHONE NUMBER</label>
+                        <input type="tel" id="phone_number_field" class="nes-input" required   minlength="9"
+                        maxlength="14" >
+                    </div>
+                        
+                    <div class="nes-field">
+                        <label for="password_field">PASSWORD</label>
+                        <input type="password" id="password_field" class="nes-input" required>
+                    </div>        
+                    <div class="nes-field">
+                        <label for="confirm_password_field">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_password_field" class="nes-input" required>
+                    </div>
+                        <button type="submit" class="nes-btn is-success">Sign Up</button>
+                        <span class="nes-field" id="have-account">Already have an account?</span> <span class="nes-text is-success"><a href="">Log in</a></span>
+                </form>
 
+            </div>
+            <div class="information-text">Made by <span class="nes-text is-success"><a href="https://github.com/Kim3n">Kim</a></span></div>
         </div>
     </div>
-        <script src="" async defer></script>
+    <script src="signupscript.js"></script> 
     </body>
 </html>

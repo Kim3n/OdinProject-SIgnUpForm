@@ -1,15 +1,9 @@
 .content{
     display: flex;
+    height: 100vh;
 }
 
-.form {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    background-color: #a5a2a2;
-}
+
 div.img {
     background-color: #a5a2a2;
     background-image: url('image2.jpg');
@@ -19,10 +13,6 @@ div.img {
     height: 100vh;
     }
 
-
-.nes-input{
-    background-color: #8bac0f;
-}
 
 .title{
     position: relative;
@@ -36,17 +26,59 @@ div.img {
 }
 .dot {
     position: relative;
-    height: 25px;
-    width: 25px;
-    left: 5%;
-    top: 5%;
+    height: 1rem;
+    width: 1rem;
+    top: -5rem;
+    left: 1.5rem;
     background-color:#ca1a21;
     box-shadow:0px 0px 10px #ff552e;
     border-radius: 50%;
     display: inline-block;
   }
-  .form-container{
+  .main{
+    
     display: flex;
-    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 70vw;
     background-color: #a5a2a2;
+    overflow-y: auto;
   }
+
+  .form {
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem 1rem 3rem;
+    background-color: #23252d;
+
+}
+
+  .form-container{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    background-color: #23252d;
+    align-items: center;
+
+  }
+
+.nes-input{
+    background-color: #8bac0f;
+}
+.nes-field{
+    color: white;
+}
+.information-text{
+    width: 50%;
+    text-align: center;
+    padding: 1rem 0rem 1rem 0rem;
+}
+#have-account{
+    text-align: center;
+}
+
