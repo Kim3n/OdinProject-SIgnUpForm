@@ -11,6 +11,7 @@ div.img {
     background-size: cover;
     width: 30vw;
     height: 100vh;
+    background-position: center;
     }
 
 
